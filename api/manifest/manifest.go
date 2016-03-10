@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/convox/rack/Godeps/_workspace/src/github.com/fatih/color"
-	yaml "github.com/convox/rack/Godeps/_workspace/src/gopkg.in/yaml.v2"
+	"github.com/fatih/color"
+	yaml "gopkg.in/yaml.v2"
 )
 
 //NOTE: these vars allow us to control other shell-outs during testing
@@ -207,7 +207,7 @@ func (m *Manifest) Build(app, dir string, cache bool) []error {
 				return []error{err}
 			}
 			if _, ok := builds[sym]; !ok {
-				builds[sym] = randomString("convox-start-",10)
+				builds[sym] = randomString("convox-start-", 10)
 			}
 
 			tags[tag] = builds[sym]

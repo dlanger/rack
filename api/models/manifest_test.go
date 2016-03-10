@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/convox/rack/Godeps/_workspace/src/github.com/aryann/difflib"
-	"github.com/convox/rack/Godeps/_workspace/src/github.com/stretchr/testify/assert"
-	"github.com/convox/rack/Godeps/_workspace/src/github.com/stretchr/testify/require"
+	"github.com/aryann/difflib"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func Diff(t *testing.T, name, s1, s2 string) {
